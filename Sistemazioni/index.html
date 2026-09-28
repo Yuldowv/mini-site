@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Surf & Travel – Sistemazioni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8M5 10v10h14V10M10 20v-6h4v6"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3l2.700 5.600 6.100.9-4.400 4.300 1 6.100L12 17l-5.400 2.900 1-6.100L3.200 9.500l6.100-.9z"/></symbol>
+  <symbol id="i-tv" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M9 3l3 3 3-3"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="6" r="2.500"/><path d="M8 21v-9a4 4 0 018 0v9M12 12v9"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="8" cy="6" r="2.200"/><circle cx="16" cy="6" r="2.200"/><path d="M5 20v-8a3 3 0 016 0v8M13 20v-8a3 3 0 016 0v8"/></symbol>
+  <symbol id="i-laptop" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="10" rx="1.500"/><path d="M2 19h20l-2-4H4z"/></symbol>
+  <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M2 9a15 15 0 0120 0M5 13a10 10 0 0114 0M8.500 16.500a5 5 0 017 0"/><circle cx="12" cy="20" r="1"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1.500"/><path d="M3 7l9 6 9-6"/></symbol>
+  <symbol id="i-call" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.500 1.500a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 20l1.500-4A8 8 0 1112 20a8 8 0 01-3.500-.8z"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 00-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.500" cy="6.500" r=".8"/></symbol>
+  <symbol id="i-yt" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l5 3-5 3z"/></symbol>
+  <symbol id="i-surf" viewBox="0 0 24 24"><path d="M4 20c4-1 6-5 8-16 2 11 4 15 8 16M4 20h16"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></symbol>
+  <symbol id="i-about" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></symbol>
+</svg>
+
+<section class="hero">
+  <header class="header">
+    <a href="#" class="logo">Surf &amp; Travel</a>
+
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span></button>
+
+    <nav class="nav" id="nav">
+      <a href="#" class="nav__link">
+        <svg viewBox="0 0 24 24"><path d="M4 20c4-1 6-5 8-16 2 11 4 15 8 16M4 20h16"/></svg>
+        Tipi di Vacanze
+      </a>
+      <a href="#" class="nav__link">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>
+        Destinazioni
+      </a>
+      <a href="#" class="nav__link active">
+        <svg viewBox="0 0 24 24"><path d="M3 11l9-8 9 8M5 10v10h14V10"/></svg>
+        Sistemazioni
+      </a>
+      <a href="#" class="nav__link">About</a>
+      <button class="btn btn--mobile">Prenota</button>
+    </nav>
+
+    <button class="btn">Prenota</button>
+  </header>
+
+  <h1 class="hero__title">Sistemazioni</h1>
+
+  <!-- Search bar -->
+  <form class="search" id="searchForm">
+    <label class="field">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+      <select name="activity">
+        <option value="">Campo Attivo</option>
+        <option>Surf</option>
+        <option>Kitesurf</option>
+        <option>Yoga</option>
+      </select>
+    </label>
+    <label class="field">
+      <svg viewBox="0 0 24 24"><path d="M12 21s-7-6.5-7-12a7 7 0 0114 0c0 5.500-7 12-7 12z"/><circle cx="12" cy="9" r="2.500"/></svg>
+      <select name="place">
+        <option value="">Scelto</option>
+        <option>Bali</option>
+        <option>Portogallo</option>
+        <option>Sardegna</option>
+      </select>
+    </label>
+    <label class="field">
+      <svg viewBox="0 0 24 24"><path d="M4 20c4-1 6-5 8-16 2 11 4 15 8 16M4 20h16"/></svg>
+      <select name="level">
+        <option value="">Default</option>
+        <option>Principiante</option>
+        <option>Intermedio</option>
+        <option>Esperto</option>
+      </select>
+    </label>
+    <button class="btn" type="submit">
+      Cerca
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.500"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+    </button>
+  </form>
+</section>
+
+<main class="resort">
+  <div class="resort__grid">
+
+    <div class="resort__main">
+      <p class="resort__place">Madagascar, Tulear</p>
+      <h2 class="resort__title">Madagascar Surf Resort</h2>
+
+      <div class="resort__text">
+        <p>Surf Resort sulla spiaggia privata, con onde per tutti i livelli a 5 minuti di barca. Ogni bungalow ha la vista mare e spiaggia a pochi passi. Una terrazza privata per il relax con bagno in camera.</p>
+        <p>Un ristorante comune con una fantastica vista a 360° regala panorami incredibili della spiaggia e della foresta, oltre alle innumerevoli line up degli spot di fronte...</p>
+      </div>
+
+      <div class="video" id="video">
+        <video id="videoEl" poster="video-poster.jpg" preload="metadata" playsinline>
+          <source src="video.mp4" type="video/mp4">
+        </video>
+        <button class="video__play" id="playBtn" aria-label="Riproduci video">
+          <svg viewBox="0 0 24 24" width="44" height="44"><path d="M7 4.500v15l13-7.500z" fill="#fff"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <aside class="services">
+      <h3 class="services__head">Tutti i Servizi:</h3>
+      <div class="services__body">
+        <ul class="services__list">
+          <li>
+            <svg viewBox="0 0 24 24" class="ico ico--dark"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+            Disponibile tutto l'anno
+          </li>
+          <li><svg viewBox="0 0 24 24" class="ico"><path d="M5 12l5 5 9-10"/></svg>Aria condizionata</li>
+          <li><svg viewBox="0 0 24 24" class="ico"><path d="M5 12l5 5 9-10"/></svg>Colazione</li>
+          <li><svg viewBox="0 0 24 24" class="ico"><path d="M5 12l5 5 9-10"/></svg>Info sugli spot di bali</li>
+          <li><svg viewBox="0 0 24 24" class="ico"><path d="M5 12l5 5 9-10"/></svg>Wifi</li>
+          <li><svg viewBox="0 0 24 24" class="ico"><path d="M5 12l5 5 9-10"/></svg>Unlimited surfaris in base al livello</li>
+        </ul>
+        <button class="btn services__btn">Prenota</button>
+      </div>
+    </aside>
+
+  </div>
+</main>
+
+<section class="block stays">
+  <header class="block__head">
+    <h2 class="block__title"><svg class="i" viewBox="0 0 24 24"><use href="#i-home"/></svg>Sistemazioni</h2>
+    <p class="block__sub">Scegli la tipologia di vacanza di surf che fa per te. Puoi partire in qualsiasi momento.</p>
+  </header>
+  <div class="stays__list">
+    <article class="stay">
+      <div class="stay__info">
+        <h3 class="stay__title">Spazi Comuni</h3>
+        <p class="stay__text">Ristorante e zona chill out per un perfetto relax post session. Consigliato per grandi e piccoli.</p>
+        <div class="amen"><span class="amen__item"><svg class="i" viewBox="0 0 24 24"><use href="#i-tv"/></svg></span><span class="amen__item"><svg class="i" viewBox="0 0 24 24"><use href="#i-user"/></svg></span><span class="amen__item"><svg class="i" viewBox="0 0 24 24"><use href="#i-phone"/></svg></span><span class="amen__item"><svg class="i" viewBox="0 0 24 24"><use href="#i-users"/></svg></span><span class="amen__item"><svg class="i" viewBox="0 0 24 24"><use href="#i-phone"/></svg></span><span class="amen__item"><svg class="i" viewBox="0 0 24 24"><use href="#i-laptop"/></svg></span><span class="amen__item"><svg class="i" viewBox="0 0 24 24"><use href="#i-wifi"/></svg></span></div>
+      </div>
+      <div class="stay__img" style="--img:url('img/spazi-comuni.jpg')"></div>
+    </article>
+    <article class="stay">
+      <div class="stay__info">
+        <h3 class="stay__title">Camera doppia</h3>
+        <p class="stay__text">Ristorante e zona chill out per un perfetto relax post session. Consigliato per grandi e piccoli.</p>
+        <div class="amen"><span class="amen__item"><svg class="i" viewBox="0 0 24 24"><use href="#i-tv"/></svg></span><span class="amen__item"><svg class="i" viewBox="0 0 24 24"><use href="#i-user"/></svg></span><span class="amen__item"><svg class="i" viewBox="0 0 24 24"><use href="#i-phone"/></svg></span><span class="amen__item"><svg class="i" viewBox="0 0 24 24"><use href="#i-users"/></svg></span><span class="amen__item"><svg class="i" viewBox="0 0 24 24"><use href="#i-phone"/></svg></span><span class="amen__item"><svg class="i" viewBox="0 0 24 24"><use href="#i-laptop"/></svg></span><span class="amen__item"><svg class="i" viewBox="0 0 24 24"><use href="#i-wifi"/></svg></span></div>
+      </div>
+      <div class="stay__img" style="--img:url('img/camera-doppia.jpg')"></div>
+    </article>
+    <article class="stay">
+      <div class="stay__info">
+        <h3 class="stay__title">Bungalow</h3>
+        <p class="stay__text">Ristorante e zona chill out per un perfetto relax post session. Consigliato per grandi e piccoli.</p>
+        <div class="amen"><span class="amen__item"><svg class="i" viewBox="0 0 24 24"><use href="#i-tv"/></svg></span><span class="amen__item"><svg class="i" viewBox="0 0 24 24"><use href="#i-user"/></svg></span><span class="amen__item"><svg class="i" viewBox="0 0 24 24"><use href="#i-phone"/></svg></span><span class="amen__item"><svg class="i" viewBox="0 0 24 24"><use href="#i-users"/></svg></span><span class="amen__item"><svg class="i" viewBox="0 0 24 24"><use href="#i-phone"/></svg></span><span class="amen__item"><svg class="i" viewBox="0 0 24 24"><use href="#i-laptop"/></svg></span><span class="amen__item"><svg class="i" viewBox="0 0 24 24"><use href="#i-wifi"/></svg></span></div>
+      </div>
+      <div class="stay__img" style="--img:url('img/bungalow.jpg')"></div>
+    </article>
+  </div>
+</section>
+
+<section class="block activities">
+  <header class="block__head">
+    <h2 class="block__title"><svg class="i" viewBox="0 0 24 24"><use href="#i-star"/></svg>Attività Surf &amp; Extra Surf</h2>
+    <p class="block__sub">Scegli la tipologia di vacanza di surf che fa per te. Puoi partire in qualsiasi momento.</p>
+  </header>
+  <div class="acts">
+    <p class="acts__label">Attività Surf in questa località:</p>
+    <div class="scroller"><a href="#" class="tile tile--big" style="--img:url('img/surf-1.jpg')"><span>Surf a Grand Canaria</span></a><a href="#" class="tile tile--big" style="--img:url('img/surf-2.jpg')"><span>Scuola Surf Las Palmas</span></a><a href="#" class="tile tile--big" style="--img:url('img/surf-3.jpg')"><span>Surf Camp Fuerteventura</span></a></div>
+    <p class="acts__label">Attività extra Surf in questa località:</p>
+    <div class="scroller"><a href="#" class="tile tile--small" style="--img:url('img/yoga.jpg')"><span>Yoga</span></a><a href="#" class="tile tile--small" style="--img:url('img/trekking.jpg')"><span>Trekking</span></a><a href="#" class="tile tile--small" style="--img:url('img/sup.jpg')"><span>Sup a Las Palmas</span></a><a href="#" class="tile tile--small" style="--img:url('img/dune.jpg')"><span>Escursione Dune Maspalomas</span></a><a href="#" class="tile tile--small" style="--img:url('img/yoga.jpg')"><span>Yoga</span></a></div>
+  </div>
+</section>
+
+<section class="block related">
+  <header class="block__head">
+    <h2 class="block__title block__title--display">Potrebbe piacerti anche:</h2>
+    <p class="block__sub">Scegli la tipologia di vacanza di surf che fa per te. Puoi partire in qualsiasi momento.</p>
+  </header>
+  <div class="scroller scroller--cards"><a href="#" class="card">
+        <div class="card__img" style="--img:url('img/camp-1.jpg')"><span class="card__tag">Surf Camp</span></div>
+        <div class="card__body"><p class="card__place">Africa, Morocco</p><h4 class="card__name">Jeffrey's Bay Surf Camp in Hotel</h4></div>
+      </a><a href="#" class="card">
+        <div class="card__img" style="--img:url('img/camp-2.jpg')"><span class="card__tag">Surf Camp</span></div>
+        <div class="card__body"><p class="card__place">Africa, Morocco</p><h4 class="card__name">Jeffrey's Bay Surf Camp in Hotel</h4></div>
+      </a><a href="#" class="card">
+        <div class="card__img" style="--img:url('img/camp-3.jpg')"><span class="card__tag">Surf Camp</span></div>
+        <div class="card__body"><p class="card__place">Africa, Morocco</p><h4 class="card__name">Jeffrey's Bay Surf Camp in Hotel</h4></div>
+      </a><a href="#" class="card">
+        <div class="card__img" style="--img:url('img/camp-4.jpg')"><span class="card__tag">Surf Camp</span></div>
+        <div class="card__body"><p class="card__place">Africa, Morocco</p><h4 class="card__name">Jeffrey's Bay Surf Camp in Hotel</h4></div>
+      </a><a href="#" class="card">
+        <div class="card__img" style="--img:url('img/camp-5.jpg')"><span class="card__tag">Surf Camp</span></div>
+        <div class="card__body"><p class="card__place">Africa, Morocco</p><h4 class="card__name">Jeffrey's Bay Surf Camp in Hotel</h4></div>
+      </a></div>
+  <div class="related__cta"><a href="#" class="btn-outline">Cerca un pacchetto</a></div>
+</section>
+
+<section class="newsletter" style="--img:url('img/newsletter.jpg')">
+  <form class="newsletter__form" id="newsForm">
+    <h2>Iscriviti alla <em>Newsletter</em></h2>
+    <input type="text" name="name" placeholder="Nome e Cognome" required aria-label="Nome e Cognome">
+    <input type="email" name="email" placeholder="Indirizzo e-mail" required aria-label="Indirizzo e-mail">
+    <button class="btn" type="submit">Voglio iscrivermi!</button>
+    <p class="newsletter__msg" id="newsMsg" role="status"></p>
+  </form>
+</section>
+
+<footer class="footer">
+  <div class="footer__grid">
+    <div class="footer__col footer__brand">
+      <p class="footer__logo">Surf &amp; Travel</p>
+      <p class="footer__agency">Surf &amp; Travel Agency</p>
+      <p class="footer__desc">Tutte le destinazioni selezionate per la tua prossima vacanza Surf e non solo.</p>
+    </div>
+    <div class="footer__col">
+      <h4 class="footer__title">Menu</h4>
+      <ul class="footer__menu">
+        <li><a href="#"><svg class="i" viewBox="0 0 24 24"><use href="#i-surf"/></svg>Vacanze Surf</a></li>
+        <li><a href="#"><svg class="i" viewBox="0 0 24 24"><use href="#i-globe"/></svg>Destinazioni</a></li>
+        <li><a href="#"><svg class="i" viewBox="0 0 24 24"><use href="#i-home"/></svg>Sistemazioni</a></li>
+        <li><a href="#"><svg class="i" viewBox="0 0 24 24"><use href="#i-about"/></svg>About</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4 class="footer__title">Contattaci</h4>
+      <div class="footer__icons">
+        <a href="mailto:info@surfandtravel.it" aria-label="Email"><svg class="i" viewBox="0 0 24 24"><use href="#i-mail"/></svg></a>
+        <a href="tel:+390000000000" aria-label="Telefono"><svg class="i" viewBox="0 0 24 24"><use href="#i-call"/></svg></a>
+        <a href="#" aria-label="WhatsApp"><svg class="i" viewBox="0 0 24 24"><use href="#i-chat"/></svg></a>
+      </div>
+      <h5 class="footer__social">Seguici sui social</h5>
+      <div class="footer__icons">
+        <a href="#" aria-label="Facebook"><svg class="i" viewBox="0 0 24 24"><use href="#i-fb"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg class="i" viewBox="0 0 24 24"><use href="#i-ig"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg class="i" viewBox="0 0 24 24"><use href="#i-yt"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="./index.js"></script>
+</body>
+</html>
